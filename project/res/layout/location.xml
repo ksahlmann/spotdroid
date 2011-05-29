@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout for LocationActivity -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+	<TextView android:id="@+id/lbl_txt_longitude"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:text="@string/key_lbl_longitude" android:padding="3dip" />
+
+	<TextView android:id="@+id/txt_longitude"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:text="" android:gravity="right" android:padding="3dip" />
+
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="@string/key_lbl_latitude"
+		android:padding="3dip" android:layout_below="@id/lbl_txt_longitude" />
+
+	<TextView android:id="@+id/txt_latitude" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="" android:gravity="right"
+		android:padding="3dip" android:layout_below="@id/txt_longitude" />
+
+	<Button android:id="@+id/btn_start_gps" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:onClick="onClickGPS"
+		android:padding="3dip" android:text="@string/key_btn_start_gps"
+		android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
