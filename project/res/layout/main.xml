@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout for MainActivity -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical" android:gravity="center_vertical">
+
+	<Button android:text="@string/key_but_menu_location"
+		android:onClick="onClickShowLocation" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" />
+	<Button android:text="@string/key_but_menu_settings"
+		android:onClick="onClickShowSettings" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" />
+	<Button android:text="@string/key_but_menu_send_data"
+		android:onClick="onClickShowSendData" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" />
+	<Button android:text="@string/key_but_menu_activities"
+		android:onClick="onClickShowActivitiesIndex" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" />
+	<Button android:text="@string/key_but_menu_website" android:onClick="onClickShowWebsite"
+		android:layout_width="fill_parent" android:layout_height="wrap_content" />
+
+</LinearLayout>

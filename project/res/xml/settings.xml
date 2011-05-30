@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Layout for SettingsActivity -->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<PreferenceCategory android:title="@string/key_pref_cat_user_title"
+		android:summary="@string/key_pref_cat_user_summary">
+
+		<EditTextPreference android:key="username"
+			android:title="@string/key_pref_cat_user_username" android:summary="@string/key_pref_cat_user_username_summary"
+			android:defaultValue="" />
+
+		<EditTextPreference android:key="password"
+			android:title="@string/key_pref_cat_user_password" android:summary="@string/key_pref_cat_user_password_summary"
+			android:defaultValue="" />
+
+		<EditTextPreference android:key="url"
+			android:title="@string/key_pref_cat_user_server_url" android:summary="@string/key_pref_cat_user_server_url_summary"
+			android:defaultValue="" />
+
+		<ListPreference android:key="format"
+			android:title="@string/key_pref_cat_user_gps_format" android:summary="@string/key_pref_cat_user_gps_format_summary"
+			android:defaultValue="" android:entryValues="@array/gps_format_values"
+			android:entries="@array/gps_format" android:negativeButtonText="@string/key_dlg_btn_ok" />
+
+	</PreferenceCategory>
+
+	<PreferenceCategory android:title="@string/key_pref_cat_send_title"
+		android:summary="@string/key_pref_cat_send_title_summary">
+
+		<EditTextPreference android:key="time"
+			android:title="@string/key_pref_cat_send_time" android:summary="@string/key_pref_cat_send_time_summary"
+			android:defaultValue="" />
+
+		<EditTextPreference android:key="distance"
+			android:title="@string/key_pref_cat_send_distance" android:summary="@string/key_pref_cat_send_distance_summary"
+			android:defaultValue="" />
+
+		<ListPreference android:key="intervall"
+			android:title="@string/key_pref_cat_send_intervall" android:summary="@string/key_pref_cat_send_intervall_summary"
+			android:defaultValue="" android:entryValues="@array/send_intervall_values"
+			android:entries="@array/send_intervall" android:negativeButtonText="@string/key_dlg_btn_ok" />
+
+		<EditTextPreference android:key="max"
+			android:title="@string/key_pref_cat_send_max" android:summary="@string/key_pref_cat_send_max_summary"
+			android:defaultValue="" android:inputType="number" />
+
+		<CheckBoxPreference android:key="modus"
+			android:title="@string/key_pref_cat_send_modus_on" android:summary="@string/key_pref_cat_send_modus_on_summary"
+			android:defaultValue="" />
+
+		<CheckBoxPreference android:key="log"
+			android:title="@string/key_pref_cat_send_log_on" android:summary="@string/key_pref_cat_send_log_on_summary"
+			android:defaultValue="" />
+
+	</PreferenceCategory>
+
+</PreferenceScreen>

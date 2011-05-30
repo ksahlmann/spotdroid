@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- German Text -->
+<resources>
+  <string-array name="gps_format">
+      <item>GPX</item>
+      <item>KML</item>        
+  </string-array>
+  <string-array name="send_intervall">
+      <item>Zeit</item>
+      <item>Entfernung</item>
+      <item>Zeit und Entfernung</item>
+  </string-array>
+</resources>
