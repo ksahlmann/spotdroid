@@ -4,7 +4,7 @@
     <string name="key_app_name">Spotdroid</string>
     <string name="key_but_menu_location">Aktuelle GPS Daten</string>
     <string name="key_but_menu_settings">Einstellungen</string>
-    <string name="key_but_menu_send_data">Manuelles Senden</string>
+    <string name="key_but_menu_send_data">Manuell Senden</string>
     <string name="key_but_menu_activities">Aktivitätsindex</string>
     <string name="key_but_menu_website">spotdroid.com</string>    
     
@@ -13,10 +13,10 @@
     <string name="key_lbl_latitude">Breitengrad: </string>
     <string name="key_lbl_longitude">Längengrad: </string>
     
-    <string name="key_btn_start_gps">Starten GPS Tracking</string>
-    <string name="key_btn_stop_gps">Stopen GPS Tracking</string>
+    <string name="key_btn_start_gps">Start GPS Tracking</string>
+    <string name="key_btn_stop_gps">Stopp GPS Tracking</string>
 
-    <string name="key_dlg_msg_gps_off">Bitte aktivieren Sie GPS.</string>
+    <string name="key_dlg_msg_gps_off">Bitte GPS Funktion aktivieren.</string>
     
     <string name="key_dlg_btn_yes">Ja</string>
     <string name="key_dlg_btn_no">Nein</string>
@@ -26,26 +26,28 @@
     <string name="key_title_settings">Einstellungen</string>
     
     <string name="key_pref_cat_user_title">Benutzerdaten</string>
-    <string name="key_pref_cat_user_summary">Bitte geben Sie Ihre Benutzerdaten ein.</string>
+    <string name="key_pref_cat_user_summary">Bitte Benutzerdaten eintragen.</string>
+    <string name="key_pref_cat_user_identifier">Kennung</string>
+    <string name="key_pref_cat_user_identifier_summary">Bitte Kennung eintragen.</string>
     <string name="key_pref_cat_user_username">Benutzername</string>
-    <string name="key_pref_cat_user_username_summary">Geben Sie Ihren Benutzernamen ein.</string>
+    <string name="key_pref_cat_user_username_summary">Bitte Benutzernamen eintragen.</string>
     <string name="key_pref_cat_user_password">Password</string>
-    <string name="key_pref_cat_user_password_summary">Geben Sie Ihr Passwort ein.</string>
+    <string name="key_pref_cat_user_password_summary">Bitte Passwort eintragen.</string>
     <string name="key_pref_cat_user_server_url">Server URL</string>
     <string name="key_pref_cat_user_server_url_summary">Die Daten werden an diese URL geschickt.</string>
-    <string name="key_pref_cat_user_gps_format">GPS Format</string>
-    <string name="key_pref_cat_user_gps_format_summary">Format der GPS Daten: GPX, KML</string>
+    <string name="key_pref_cat_user_gps_format">GPS Log Format</string>
+    <string name="key_pref_cat_user_gps_format_summary">Log Format der GPS Daten: GPX, KML</string>
     
     <string name="key_pref_cat_send_title">Sendemodus</string>
     <string name="key_pref_cat_send_title_summary">Einstellungen für den Sendemodus</string>
-    <string name="key_pref_cat_send_time">Zeitintervall</string>
-    <string name="key_pref_cat_send_time_summary">In welchem Zeitintervall wird gesendet?</string>
-    <string name="key_pref_cat_send_distance">Entfernungsintervall</string>
-    <string name="key_pref_cat_send_distance_summary">In welchem Entfernungsintervall wird gesendet?</string>
+    <string name="key_pref_cat_send_time">Zeitintervall (Minuten)</string>
+    <string name="key_pref_cat_send_time_summary">In welchem Zeitintervall soll gesendet werden?</string>
+    <string name="key_pref_cat_send_distance">Entfernungsintervall (Meter)</string>
+    <string name="key_pref_cat_send_distance_summary">In welchem Entfernungsintervall soll gesendet werden?</string>
     <string name="key_pref_cat_send_intervall">Intervallauswahl</string>
     <string name="key_pref_cat_send_intervall_summary">Nur Zeit, nur Entfernung oder beides?</string>
-    <string name="key_pref_cat_send_max">Max. Einträge</string>
-    <string name="key_pref_cat_send_max_summary">Max. Zahl der GPS Einträge</string>
+    <string name="key_pref_cat_send_max">Max. Log Einträge</string>
+    <string name="key_pref_cat_send_max_summary">Max. Zahl der GPS Log Einträge</string>
     <string name="key_pref_cat_send_modus_on">Sendemodus ein/aus</string>
     <string name="key_pref_cat_send_modus_on_summary">Sendemodus ein- und ausschalten</string>
     <string name="key_pref_cat_send_log_on">GPS Log ein/aus</string>

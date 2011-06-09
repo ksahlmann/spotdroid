@@ -6,8 +6,8 @@
       <item>KML</item>        
   </string-array>
   <string-array name="send_intervall">
-      <item>Zeit</item>
-      <item>Entfernung</item>
-      <item>Zeit und Entfernung</item>
+      <item>Time</item>
+      <item>Distance</item>
+      <item>Time And Distance</item>
   </string-array>
 </resources>

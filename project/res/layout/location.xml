@@ -3,6 +3,10 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="fill_parent" android:layout_height="fill_parent">
 
+    <ImageView android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:src="@drawable/img_splash"
+		android:scaleType="centerCrop" layout_gravity="top" />
+
 	<TextView android:id="@+id/lbl_txt_longitude"
 		android:layout_width="fill_parent" android:layout_height="wrap_content"
 		android:text="@string/key_lbl_longitude" android:padding="3dip" />

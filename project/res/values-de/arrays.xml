@@ -3,7 +3,7 @@
 <resources>
   <string-array name="gps_format">
       <item>GPX</item>
-      <item>KML</item>        
+      <item>KML</item>
   </string-array>
   <string-array name="send_intervall">
       <item>Zeit</item>
