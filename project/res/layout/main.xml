@@ -2,11 +2,7 @@
 <!-- Layout for MainActivity -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="fill_parent" android:layout_height="fill_parent"
-	android:orientation="vertical" android:gravity="center_vertical">
-
-    <ImageView android:layout_width="fill_parent"
-		android:layout_height="fill_parent" android:src="@drawable/img_splash"
-		android:scaleType="centerCrop" layout_gravity="top" />
+	android:orientation="vertical" android:gravity="center_vertical" android:background="@drawable/img_splash">
 
 	<Button android:text="@string/key_but_menu_location"
 		android:onClick="onClickShowLocation" android:layout_width="fill_parent"

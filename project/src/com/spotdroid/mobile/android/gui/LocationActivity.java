@@ -1,11 +1,16 @@
 package com.spotdroid.mobile.android.gui;
 
+import org.osmdroid.tileprovider.tilesource.TileSourceFactory;
+import org.osmdroid.util.GeoPoint;
+import org.osmdroid.views.MapView;
+import org.osmdroid.views.overlay.MyLocationOverlay;
+
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.content.DialogInterface.OnClickListener;
+import android.content.Intent;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
@@ -51,6 +56,12 @@ public class LocationActivity extends Activity
      * Will be replaced by user settings. */
     private static final int    MIN_DISTANCE       = 100;
 
+    /** The osmdroid mapview to show the map. */
+    protected MapView mapView; 
+    
+    /** The osmdroid overlay to show the location. */
+    protected MyLocationOverlay myLocationOverlay;
+    
     /* (non-Javadoc)
      * @see android.app.Activity#onCreate(android.os.Bundle)
      */
@@ -60,6 +71,16 @@ public class LocationActivity extends Activity
         super.onCreate(savedInstanceState);
         //set layout
         setContentView(R.layout.location);
+        mapView = (MapView) findViewById(R.id.map);
+        mapView.setBuiltInZoomControls(true);
+        mapView.setMultiTouchControls(true);
+        //set zoom to default 
+        mapView.getController().setZoom(5);
+        mapView.getController().setCenter(new GeoPoint(51.00, 10.20)); 
+        mapView.setTileSource(TileSourceFactory.MAPNIK); 
+        myLocationOverlay = new MyLocationOverlay(this.getApplicationContext(), this.mapView); 
+        mapView.getOverlays().add(myLocationOverlay);
+        
     }
 
     /* (non-Javadoc)
@@ -68,6 +89,7 @@ public class LocationActivity extends Activity
     @Override
     protected void onPause()
     {
+        myLocationOverlay.disableMyLocation();
         super.onPause();
         //TODO: maybe to stop the gps tracking if the app is off? 
     }
@@ -80,6 +102,9 @@ public class LocationActivity extends Activity
     {
         locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
 
+        //enable location
+        myLocationOverlay.enableMyLocation();
+        
         //reset the button and texts.
         if (!isGPSEnabled())
         {
@@ -265,6 +290,12 @@ public class LocationActivity extends Activity
             ((TextView) findViewById(R.id.txt_latitude)).setText(String.valueOf(location.getLatitude()));
             ((TextView) findViewById(R.id.txt_longitude)).setText(String.valueOf(location.getLongitude()));
 
+            GeoPoint point = new GeoPoint(location);
+            //move to location            
+            //animation doesn't set the center properly -> bug
+//            mapView.getController().animateTo(point, MapController.AnimationType.LINEAR);
+            mapView.getController().setZoom(15);
+            mapView.getController().setCenter(point);
         }
     }
 

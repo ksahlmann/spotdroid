@@ -3,5 +3,7 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="gen"/>
 	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="lib" path="assets/osmdroid-android-3.0.5.jar"/>
+	<classpathentry exported="true" kind="lib" path="assets/slf4j-android-1.6.1-RC1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

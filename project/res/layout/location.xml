@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Layout for LocationActivity -->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="@drawable/img_splash">
 
-    <ImageView android:layout_width="fill_parent"
-		android:layout_height="fill_parent" android:src="@drawable/img_splash"
-		android:scaleType="centerCrop" layout_gravity="top" />
+    <org.osmdroid.views.MapView android:id="@+id/map"
+        android:layout_width="fill_parent" android:layout_height="300dip"
+        android:enabled="true" android:clickable="true" />
 
 	<TextView android:id="@+id/lbl_txt_longitude"
 		android:layout_width="fill_parent" android:layout_height="wrap_content"
-		android:text="@string/key_lbl_longitude" android:padding="3dip" />
+		android:text="@string/key_lbl_longitude" android:padding="3dip" android:layout_below="@id/map"/>
 
 	<TextView android:id="@+id/txt_longitude"
 		android:layout_width="fill_parent" android:layout_height="wrap_content"
-		android:text="" android:gravity="right" android:padding="3dip" />
+		android:text="" android:gravity="right" android:padding="3dip" android:layout_below="@id/map"/>
 
 	<TextView android:layout_width="fill_parent"
 		android:layout_height="wrap_content" android:text="@string/key_lbl_latitude"
