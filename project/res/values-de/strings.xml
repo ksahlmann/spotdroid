@@ -24,6 +24,7 @@
     
     <string name="key_title_gps_tracking">GPS Daten</string>
     <string name="key_title_settings">Einstellungen</string>
+    <string name="key_title_activities">Aktivitätsindex</string>
     
     <string name="key_pref_cat_user_title">Benutzerdaten</string>
     <string name="key_pref_cat_user_summary">Bitte Benutzerdaten eintragen.</string>
@@ -52,5 +53,11 @@
     <string name="key_pref_cat_send_modus_on_summary">Sendemodus ein- und ausschalten</string>
     <string name="key_pref_cat_send_log_on">GPS Log ein/aus</string>
     <string name="key_pref_cat_send_log_on_summary">GPS Log auf dem Gerät ein- und ausschalten</string>
+    
+    <string name="key_btn_refresh_index">Aktivitätsindex neu laden</string>
+    <string name="key_lbl_refresh_index_id">ID</string>
+    <string name="key_lbl_refresh_index_longitude">Längengrad</string>
+    <string name="key_lbl_refresh_index_latitude">Breitengrad</string>
+    <string name="key_lbl_refresh_index_timestamp">Uhrzeit</string>
     
 </resources>

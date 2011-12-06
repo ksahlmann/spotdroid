@@ -77,7 +77,8 @@ public class MainActivity extends Activity
      */
     public void onClickShowActivitiesIndex(View view)
     {
-        //TODO
+        Intent intent = new Intent(this, ActivityIndexActivity.class);
+        startActivity(intent);
     }
 
     /**

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="open_helper_classname">com.spotdroid.mobile.android.data.DatabaseHelper</string>
+
+</resources>

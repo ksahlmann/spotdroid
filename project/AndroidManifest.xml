@@ -31,5 +31,9 @@
 			android:theme="@android:style/Theme.Light">
 		</activity>
 
+		<activity android:name=".gui.ActivityIndexActivity" android:label="@string/key_title_activities"
+			android:theme="@android:style/Theme.Light">
+		</activity>		    
+		    
 	</application>
 </manifest>

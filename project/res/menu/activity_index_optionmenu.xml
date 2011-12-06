@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Option Menu for ActivityIndexActivity -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/opt_refresh_index"
+        android:icon="@drawable/ic_menu_refresh"
+        android:title="@string/key_btn_refresh_index"/>
+
+</menu>
